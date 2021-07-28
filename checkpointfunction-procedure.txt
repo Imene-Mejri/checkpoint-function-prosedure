@@ -1,0 +1,77 @@
+
+
+ 1)  Write a procedure, called dot_product which calculates in the variable ps, the dot(scalar) product of v1 and v2 (v1 and v2 are vectors of IR)
+
+
+procedure dot_product (v1 , v1:integer)
+var
+ps:integer
+begin
+
+read(v1)
+read(v2)
+for (i:=1 ;i<v1.length ;i++)
+for (j:=1 ;j<v2.length;i++)
+ps:=v1 *v2
+end 
+end 
+end
+
+
+
+2)Write an algorithm which determines, for n pairs of given vectors, whether two vectors of given IR are orthogonal, by calling the procedure defined in the previous question. The dot product of two orthogonal vectors is zero.
+
+
+algorithme IR-orthogonal 
+n:integer
+
+begin 
+write ('enter the victors de n entier ')
+read (n)
+ dot_product(v1,v2)
+for (i:=1 ;i<v1.length ;i++)
+for (j:=1 ;j<v2.length;i++)
+if dot-product(v1[i],v2[j]===0){
+ecrire ('v1[i] and v2[j] are orthogonal')
+else {
+ecrire ('sorry v1[i] and v2[j] are not  orthogonal')
+}}
+end
+
+3)Modify the previous algorithm if you use a dot_product function instead of a procedure.
+
+
+function dot_product (v1 , v1:integer):integer
+var
+ps:integer
+begin
+read(v1)
+read(v2)
+ps :integer  :=0
+for (i:=1 ;i<v1.length ;i++)
+for (j:=1 ;j<v2.length;i++)
+ps:=v1 *v2
+end 
+end 
+return (ps)
+end
+
+
+
+
+algorithme IR-orthogonal-function
+n:integer
+
+begin 
+write ('enter the victors de n entier ')
+read (n)
+   RI:=  dot_product(ps)
+for (i:=1 ;i<v1.length ;i++)
+for (j:=1 ;j<v2.length;i++)
+if RI(v1[i],v2[j]===0){
+ecrire ('v1[i] and v2[j] are orthogonal')
+else {
+ecrire ('sorry v1[i] and v2[j] are not  orthogonal')
+}}
+end
+
